@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.1-1 (tags/2.2.1-1-7267; 2012-08-30T14:04:51+0000) JAXWS-RI/2.2.7 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws.raul.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.raul.com/">
+
+<xs:element name="echo" type="tns:echo"/>
+
+<xs:element name="echoResponse" type="tns:echoResponse"/>
+
+<xs:complexType name="echo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="echoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
